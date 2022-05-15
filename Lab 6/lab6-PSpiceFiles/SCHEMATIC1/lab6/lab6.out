@@ -1,0 +1,146 @@
+
+**** 05/05/22 23:39:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab6"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 6\lab6-pspicefiles\schematic1\lab6.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab6.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab6-pspicefiles/lab6.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Harry\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5us 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB6
+M_M11         N03180 N02964 0 0 Mbreakn           
+M_M8         N02964 N02940 0 0 Mbreakn           
+M_M7         N02964 N02940 0 0 Mbreakn           
+M_M12         N03180 N02964 0 0 Mbreakn           
+V_V1         N02800 0 5V
+C_C1         N02940 N03180  22pF  TC=0,0 
+V_V5         N02836 0 5V
+M_M2         N02964 N02940 N03002 N02800 Mbreakp           
+M_M9         N03008 N02964 N02836 N02836 Mbreakp           
+R_R1         N02940 N02964  10k TC=0,0 
+M_M1         N03002 N02940 N02800 N02800 Mbreakp           
+M_M10         N03180 N02964 N03008 N02836 Mbreakp           
+
+**** RESUMING lab6.cir ****
+.END
+
+**** 05/05/22 23:39:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab6"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 6\lab6-pspicefiles\schematic1\lab6.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         Mbreakp         
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L   10.000000E-06   10.000000E-06 
+           W   30.000000E-06  120.000000E-06 
+         VTO    2              -1.5          
+          KP  111.000000E-06   55.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .01             .04         
+          IS   16.640000E-12   16.640000E-12 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    2.000000E-12    4.000000E-12 
+         CBS    2.000000E-12    4.000000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO  100.000000E-15  200.000000E-15 
+        CGDO  100.000000E-15  200.000000E-15 
+        CGBO    0               0            
+         TOX    1.200000E-06    1.200000E-06 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 05/05/22 23:39:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab6"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 6\lab6-pspicefiles\schematic1\lab6.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02800)    5.0000 (N02836)    5.0000 (N02940)    2.6232 (N02964)    2.6232     
+
+(N03002)    4.7322 (N03008)    4.7322 (N03180)    2.6232 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.327E-04
+    V_V5        -1.327E-04
+
+    TOTAL POWER DISSIPATION   1.33E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/05/22 23:39:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab6"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 6\lab6-pspicefiles\schematic1\lab6.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       20.39
+  Total job time (using Solver 1)   =         .06
+

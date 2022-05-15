@@ -1,0 +1,13 @@
+* source LAB6
+M_M11         N03180 N02964 0 0 Mbreakn           
+M_M8         N02964 N02940 0 0 Mbreakn           
+M_M7         N02964 N02940 0 0 Mbreakn           
+M_M12         N03180 N02964 0 0 Mbreakn           
+V_V1         N02800 0 5V
+C_C1         N02940 N03180  22pF  TC=0,0 
+V_V5         N02836 0 5V
+M_M2         N02964 N02940 N03002 N02800 Mbreakp           
+M_M9         N03008 N02964 N02836 N02836 Mbreakp           
+R_R1         N02940 N02964  10k TC=0,0 
+M_M1         N03002 N02940 N02800 N02800 Mbreakp           
+M_M10         N03180 N02964 N03008 N02836 Mbreakp           
